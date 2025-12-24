@@ -1,0 +1,138 @@
+.features {
+  padding: 100px 80px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.features h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.features-sub {
+  color: #64748b;
+  font-size: 16px;
+  margin-bottom: 60px;
+}
+
+/* Layout */
+.features-wrapper {
+  position: relative;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+/* Cards */
+.feature-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  padding: 28px;
+  text-align: left;
+  min-height: 220px;
+}
+
+.feature-card h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  color: #475569;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Icon */
+.icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: #eaf4ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+/* Arrows */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.arrow.left {
+  left: -50px;
+}
+
+.arrow.right {
+  right: -50px;
+}
+.pagination {
+  margin-top: 40px;
+  position: relative;
+  width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Grey base line */
+.track {
+  width: 100%;
+  height: 4px;
+  background: #e5e7eb;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Active gradient line */
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #2563eb, #22c55e);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+/* Dots */
+.dots {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #cbd5f5;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #2563eb;
+}
+
+
+.dot.active {
+  width: 22px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #2563eb, #22c55e);
+}

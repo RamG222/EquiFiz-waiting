@@ -1,0 +1,126 @@
+.why {
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.why h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.why-sub {
+  color: #64748b;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+/* GRID */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+}
+
+/* CARD */
+.why-card {
+  position: relative;
+  height: 340px;
+  border-radius: 20px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+}
+
+/* FRONT */
+.card-front,
+.card-hover {
+  position: absolute;
+  inset: 0;
+  padding: 32px;
+  transition: all 0.35s ease;
+}
+
+.card-front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-front .icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: #eaf4ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.card-front h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card-front p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* HOVER STATE */
+.card-hover {
+  opacity: 0;
+  transform: translateY(20px);
+  text-align: left;
+}
+
+.why-card:hover .card-front {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.why-card:hover .card-hover {
+  opacity: 1;
+  transform: translateY(0);
+  border: 2px solid #3b82f6;
+  border-radius: 20px;
+}
+
+/* Hover content */
+.card-hover h4 {
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+.hover-item {
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hover-item.bad {
+  background: #fff1f2;
+  color: #dc2626;
+}
+
+.hover-item.good {
+  background: #ecfdf5;
+  color: #059669;
+}
+
+.hover-item.info {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.hover-item.highlight {
+  background: #dcfce7;
+  font-weight: 600;
+  justify-content: center;
+}

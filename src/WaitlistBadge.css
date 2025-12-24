@@ -1,0 +1,43 @@
+/* src/components/WaitlistBadge.css */
+
+.waitlist-badge-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.waitlist-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 14px 26px;
+  border-radius: 999px;
+
+  background: linear-gradient(
+    180deg,
+    #f2fbff 0%,
+    #eaf6ff 100%
+  );
+
+  border: 1.5px solid #b7dbff;
+
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #0f172a;
+
+  box-shadow: 0 4px 14px rgba(0, 153, 255, 0.08);
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #22c55e;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.2);
+}
+
+.badge-text strong {
+  font-weight: 600;
+}
