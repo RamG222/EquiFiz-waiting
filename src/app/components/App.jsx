@@ -8,7 +8,7 @@ import ComingSoon from "./ComingSoon";
 import FAQ from "./FAQ";
 import PrivacyNotice from "./PrivacyNotice";
 import Footer from "./Footer";
-import FormCard from "./components/Form";
+import FormCard from "./Form";
 
 export default function App() {
   return (

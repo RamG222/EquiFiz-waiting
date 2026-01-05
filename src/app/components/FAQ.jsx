@@ -1,4 +1,5 @@
 // src/components/FAQ.jsx
+"use client";
 import { useState } from "react";
 import "./FAQ.css";
 
