@@ -5,7 +5,7 @@ export default function Stats() {
     <section className="stats-section">
       <div className="stats-container">
         <div className="stat">
-          <h2 className="blue">₹99</h2>
+          <h2 className="blue">₹299</h2>
           <p>Per Month</p>
         </div>
 

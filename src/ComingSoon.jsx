@@ -13,14 +13,12 @@ export default function ComingSoon() {
         {/* Card 1 */}
         <div className="feature-card">
           <div className="card-top">
-            <div className="icon-box">📈</div>
+            <div className="icon-box">🔗</div>
             <span className="quarter-badge">Q2 2024</span>
           </div>
 
-          <h3>Bonds & Fixed Income</h3>
-          <p>
-            Complete bond analysis with yield curves and credit ratings
-          </p>
+          <h3>Option Chain</h3>
+          <p>Complete bond analysis with yield curves and credit ratings</p>
 
           <div className="progress-row">
             <span>Development</span>
@@ -38,10 +36,8 @@ export default function ComingSoon() {
             <span className="quarter-badge">Q3 2024</span>
           </div>
 
-          <h3>Smart Alerts</h3>
-          <p>
-            AI-powered notifications for market opportunities and risks
-          </p>
+          <h3>Algos</h3>
+          <p>AI-powered notifications for market opportunities and risks</p>
 
           <div className="progress-row">
             <span>Development</span>
@@ -59,10 +55,8 @@ export default function ComingSoon() {
             <span className="quarter-badge">Q4 2024</span>
           </div>
 
-          <h3>Global Indices</h3>
-          <p>
-            International markets, ADRs, and cross-currency analysis
-          </p>
+          <h3>Portfolio Allocation Tool</h3>
+          <p>International markets, ADRs, and cross-currency analysis</p>
 
           <div className="progress-row">
             <span>Development</span>

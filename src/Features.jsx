@@ -32,11 +32,11 @@ const FEATURES = [
     desc: "Timeless wisdom from world-class books, live-adapted.",
     icon: "📘",
   },
-  {
-    title: "Fund Allocation Tool",
-    desc: "Get your personalized investment mix in minutes.",
-    icon: "🎯",
-  },
+  // {
+  //   title: "Fund Allocation Tool",
+  //   desc: "Get your personalized investment mix in minutes.",
+  //   icon: "🎯",
+  // },
   {
     title: "Comparisons",
     desc: "Index, stocks, sectors, commodities — all side by side.",
@@ -66,7 +66,7 @@ export default function Features() {
     <section className="features">
       <h2>Powerful Features, Simplified</h2>
       <p className="features-sub">
-        Everything you need to make informed investment decisions, all in one platform
+        Everything you need to make informed investment decisions.
       </p>
 
       <div className="features-wrapper">
@@ -94,22 +94,22 @@ export default function Features() {
           ›
         </button>
       </div>
-<div className="pagination">
-  <div className="track">
-    <div
-      className="progress"
-      style={{ width: `${((page + 1) / totalPages) * 100}%` }}
-    />
-  </div>
-      <div className="dots">
-        {Array.from({ length: totalPages }).map((_, i) => (
-          <span
-            key={i}
-            className={i === page ? "dot active" : "dot"}
-            onClick={() => setPage(i)}
+      <div className="pagination">
+        <div className="track">
+          <div
+            className="progress"
+            style={{ width: `${((page + 1) / totalPages) * 100}%` }}
           />
-        ))}
-      </div>
+        </div>
+        <div className="dots">
+          {Array.from({ length: totalPages }).map((_, i) => (
+            <span
+              key={i}
+              className={i === page ? "dot active" : "dot"}
+              onClick={() => setPage(i)}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

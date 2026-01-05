@@ -20,7 +20,7 @@ body {
   width: 100%;
   padding: 0px 80px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 .page{
@@ -235,7 +235,7 @@ h1 span {
   color: #2563eb;
   bottom: 10px;
   left: -30px;
-  ensure animation-duration: 4.5s;
+  animation-duration: 4.5s;
 }
 
 /* Rupee */

@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: "How can I contact you?",
-    a: "Reach out to us at Contact@equifiz.com or through our chat widget (available to waitlist members). We typically respond within 24 hours. For urgent issues, priority support is available for premium users.",
+    a: "Reach out to us at info@equifiz.com or through our chat widget (available to waitlist members). We typically respond within 24 hours. For urgent issues, priority support is available for premium users.",
   },
 ];
 
@@ -42,9 +42,7 @@ export default function FAQ() {
           <div className="faq-item" key={index}>
             <button
               className="faq-question"
-              onClick={() =>
-                setOpenIndex(openIndex === index ? null : index)
-              }
+              onClick={() => setOpenIndex(openIndex === index ? null : index)}
             >
               <span>{item.q}</span>
 
@@ -66,9 +64,7 @@ export default function FAQ() {
               </svg>
             </button>
 
-            {openIndex === index && (
-              <div className="faq-answer">{item.a}</div>
-            )}
+            {openIndex === index && <div className="faq-answer">{item.a}</div>}
           </div>
         ))}
       </div>

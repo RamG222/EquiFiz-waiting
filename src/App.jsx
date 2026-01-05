@@ -20,16 +20,15 @@ export default function App() {
         {/* LEFT SECTION */}
         <div className="left">
           <h1>
-            Invest Smarter.
+            Invest Simpler.
             <br />
-            Trade Simpler.
+            Trade Smarter.
             <br />
             <span>Own the Future.</span>
           </h1>
 
           <p className="subtitle">
-            A new era of investing — data, analysis, and strategies, all in one
-            platform.
+           One Place to Research, Analyse and Decide.
           </p>
 
           {/* FORM CARD */}

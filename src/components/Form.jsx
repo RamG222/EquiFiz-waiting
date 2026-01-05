@@ -5,7 +5,7 @@ function FormCard() {
       <input type="email" placeholder="you@example.com" />
 
       <label>Phone (optional)</label>
-      <input type="text" placeholder="+91 98765 43210" />
+      <input type="text" placeholder="Ex-  1234567890" />
 
       <div className="checkbox">
         <input type="checkbox" />

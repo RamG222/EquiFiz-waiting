@@ -2,7 +2,7 @@ import "./WhyChoose.css";
 
 const CARDS = [
   {
-    title: "Institutional-grade features at ₹99",
+    title: "Institutional-grade features at ₹299",
     subtitle: "Professional-level analysis tools at retail prices",
     icon: "🏅",
     hoverTitle: "Pricing Breakdown",
@@ -19,7 +19,11 @@ const CARDS = [
     hoverTitle: "Example: P/E Ratio",
     hoverItems: [
       { label: "Other Platforms", value: "Complex jargon", type: "bad" },
-      { label: "Equifiz Explains", value: "Is this stock expensive?", type: "good" },
+      {
+        label: "Equifiz Explains",
+        value: "Is this stock expensive?",
+        type: "good",
+      },
     ],
   },
   {
@@ -28,15 +32,23 @@ const CARDS = [
     icon: "🔒",
     hoverTitle: "Your Privacy",
     hoverItems: [
-      { label: "Data Ownership", value: "Your data belongs to you", type: "good" },
-      { label: "Transparent Pricing", value: "₹99/month. No surprises", type: "info" },
+      {
+        label: "Data Ownership",
+        value: "Your data belongs to you",
+        type: "good",
+      },
+      {
+        label: "Transparent Pricing",
+        value: "₹299/month. No surprises",
+        type: "info",
+      },
     ],
   },
   {
     title: "Proven analysis framework",
     subtitle: "Methods used by successful portfolio managers",
     icon: "📈",
-    hoverTitle: "Battle-Tested Methods",
+    hoverTitle: "Back-Tested Strategies",
     hoverItems: [
       { label: "DCF Analysis", value: "Warren Buffett’s method", type: "info" },
       { label: "Portfolio Theory", value: "Modern optimization", type: "good" },
@@ -59,7 +71,8 @@ export default function WhyChoose() {
     <section className="why">
       <h2>Why Smart Investors Choose Equifiz</h2>
       <p className="why-sub">
-        Professional-grade analysis tools designed for retail investors who demand institutional quality
+        Professional-grade analysis tools designed for retail investors who
+        demand institutional quality
       </p>
 
       <div className="why-grid">

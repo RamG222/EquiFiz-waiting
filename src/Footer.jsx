@@ -19,37 +19,13 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Product */}
-        <div className="footer-col">
-          <h4>Product</h4>
-          <ul>
-            <li>Features</li>
-            <li>Pricing</li>
-            <li>API Documentation</li>
-            <li>Mobile App</li>
-            <li>Chrome Extension</li>
-            <li>Desktop App</li>
-          </ul>
-        </div>
-
-        {/* Company */}
-        <div className="footer-col">
-          <h4>Company</h4>
-          <ul>
-            <li>About Us</li>
-            <li>Careers</li>
-            <li>Press Kit</li>
-            <li>Blog</li>
-            <li>Investors</li>
-            <li>Contact</li>
-          </ul>
-        </div>
-
         {/* Contact */}
         <div className="footer-col">
           <h4>Get in Touch</h4>
           <ul className="contact">
-            <li>✉️ Contact@equifiz.com</li>
+            <a href="mailto:info@equifiz.com" target="_blank">
+              <li>✉️ info@equifiz.com</li>
+            </a>
             <li>
               📍 Mumbai
               <br />
