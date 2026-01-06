@@ -49,3 +49,33 @@
 .privacy-links a:hover {
   text-decoration: underline;
 }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .privacy-section {
+    padding: 60px 20px;
+  }
+
+  .privacy-card {
+    padding: 28px 24px;
+  }
+
+  .privacy-title {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .privacy-text {
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+
+  .privacy-links {
+    gap: 16px;
+    flex-direction: column;
+  }
+
+  .privacy-links a {
+    font-size: 13px;
+  }
+}

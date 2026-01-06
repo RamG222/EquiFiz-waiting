@@ -161,3 +161,91 @@
   font-weight: 600;
   color: #22c55e;
 }
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .hero-container {
+    padding: 0 40px;
+    gap: 40px;
+  }
+
+  .hero-left h1 {
+    font-size: 48px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+  }
+
+  .hero-form {
+    width: 360px;
+  }
+
+  .brand-logo {
+    top: 40px;
+    right: 20px;
+  }
+
+  .logo-box {
+    width: 100px;
+    height: 100px;
+  }
+
+  .logo-box span {
+    font-size: 48px;
+  }
+
+  .chart-card {
+    width: 280px;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding: 40px 0;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 40px;
+  }
+
+  .hero-left {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-left h1 {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+
+  .hero-subtitle {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .hero-form {
+    width: 100%;
+    max-width: 420px;
+    padding: 24px;
+  }
+
+  .hero-form input {
+    padding: 12px;
+    margin-bottom: 16px;
+    font-size: 14px;
+  }
+
+  .checkbox {
+    font-size: 12px;
+  }
+
+  .hero-right {
+    display: none;
+  }
+}

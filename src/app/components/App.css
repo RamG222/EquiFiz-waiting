@@ -263,3 +263,105 @@ h1 span {
   text-shadow: 0 0 10px rgba(34, 197, 94, 0.4);
 }
 
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 40px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+  }
+
+  .form-card {
+    width: 400px;
+    padding: 32px;
+  }
+
+  .right {
+    width: 360px;
+    height: 360px;
+  }
+
+  .logo-box {
+    width: 150px;
+    height: 150px;
+  }
+
+  .logo {
+    font-size: 70px;
+  }
+
+  .chart-card {
+    width: 280px;
+    padding: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .left {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+  .form-card {
+    width: 100%;
+    max-width: 420px;
+    padding: 28px 24px;
+  }
+
+  .form-card label {
+    font-size: 13px;
+  }
+
+  .form-card input[type="email"],
+  .form-card input[type="text"] {
+    padding: 12px 14px;
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  .checkbox {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  .cta-btn {
+    padding: 14px;
+    font-size: 15px;
+  }
+
+  .form-note {
+    font-size: 13px;
+    margin-top: 14px;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .float {
+    display: none;
+  }
+}
+

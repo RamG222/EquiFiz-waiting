@@ -41,3 +41,17 @@
 .badge-text strong {
   font-weight: 600;
 }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .waitlist-badge {
+    padding: 12px 20px;
+    font-size: 14px;
+    gap: 8px;
+  }
+
+  .status-dot {
+    width: 8px;
+    height: 8px;
+  }
+}

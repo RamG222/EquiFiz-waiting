@@ -81,8 +81,56 @@
 }
 
 /* RESPONSIVE */
+@media (max-width: 1024px) {
+  .waitlist-section {
+    padding: 60px 40px;
+  }
+
+  .waitlist-cards {
+    gap: 24px;
+  }
+}
+
 @media (max-width: 900px) {
   .waitlist-cards {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .waitlist-section {
+    padding: 60px 20px;
+  }
+
+  .waitlist-title {
+    font-size: 24px;
+  }
+
+  .waitlist-subtitle {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .waitlist-card {
+    padding: 30px 24px;
+  }
+
+  .icon {
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .tag {
+    font-size: 11px;
+  }
+
+  .waitlist-card h3 {
+    font-size: 16px;
+  }
+
+  .waitlist-card p {
+    font-size: 13px;
   }
 }
