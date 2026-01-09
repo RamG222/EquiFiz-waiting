@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
+import pool from "@/lib/db";
 
 export async function POST(req) {
   try {
@@ -12,14 +13,22 @@ export async function POST(req) {
       );
     }
 
+    // 💾 Save to database
+    const query = `
+      INSERT INTO waitlist (email, phone, created_at) 
+      VALUES ($1, $2, NOW()) 
+      RETURNING id, email, phone, created_at
+    `;
+    const dbResult = await pool.query(query, [email, phone || null]);
+
     // 📧 Create transporter
     const transporter = nodemailer.createTransport({
       host: "smtpout.secureserver.net",
       port: 465,
       secure: true, // SSL (required for 465)
       auth: {
-        user: "founders@equifiz.com",
-        pass: "$Hivraj11",
+        user: process.env.EMAIL_USER || "founders@equifiz.com",
+        pass: process.env.EMAIL_PASS || "$Hivraj11",
       },
     });
 
@@ -32,6 +41,7 @@ export async function POST(req) {
         <h2>New Waitlist Signup</h2>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone:</strong> ${phone || "Not provided"}</p>
+        <p><strong>Database ID:</strong> ${dbResult.rows[0].id}</p>
       `,
     };
 
@@ -39,11 +49,18 @@ export async function POST(req) {
     await transporter.sendMail(mailOptions);
 
     return NextResponse.json(
-      { success: true, message: "Email sent" },
+      {
+        success: true,
+        message: "Signup successful",
+        data: dbResult.rows[0],
+      },
       { status: 200 }
     );
   } catch (error) {
-    console.error("Mail error:", error);
-    return NextResponse.json({ message: "Server error" }, { status: 500 });
+    console.error("Error:", error);
+    return NextResponse.json(
+      { message: "Server error", error: error.message },
+      { status: 500 }
+    );
   }
 }
