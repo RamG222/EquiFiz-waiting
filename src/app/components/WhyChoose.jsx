@@ -8,7 +8,7 @@ const CARDS = [
     hoverTitle: "Pricing Breakdown",
     hoverItems: [
       { label: "Others", value: "₹2K–25K / year", type: "bad" },
-      { label: "Equifiz", value: "₹1,188 / year", type: "good" },
+      { label: "Equifiz", value: "₹3,588 / year", type: "good" },
       { label: "Up to 95% savings", value: "", type: "highlight" },
     ],
   },

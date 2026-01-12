@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     q: "How can I contact you?",
-    a: "Reach out to us at info@equifiz.com or through our chat widget (available to waitlist members). We typically respond within 24 hours. For urgent issues, priority support is available for premium users.",
+    a: "Reach out to us at contact@equifiz.com or through our chat widget (available to waitlist members). We typically respond within 24 hours. For urgent issues, priority support is available for premium users.",
   },
 ];
 

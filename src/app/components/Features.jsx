@@ -54,6 +54,26 @@ const FEATURES = [
     desc: "Deep-dive analysis to uncover red flags.",
     icon: "🕵️",
   },
+  {
+    title: "Stock Screener",
+    desc: "Filter and find stocks matching your criteria instantly.",
+    icon: "🔍",
+  },
+  {
+    title: "Bond Analysis",
+    desc: "Credit ratings, yields, duration, and risk assessment.",
+    icon: "💳",
+  },
+  {
+    title: "Mutual Fund Screener",
+    desc: "Compare funds by performance, expense ratios, and holdings.",
+    icon: "📋",
+  },
+  {
+    title: "Correlation Analysis",
+    desc: "Understand asset relationships and portfolio diversification.",
+    icon: "📊",
+  },
 ];
 
 export default function Features() {
