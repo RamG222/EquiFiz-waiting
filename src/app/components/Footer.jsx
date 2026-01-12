@@ -23,8 +23,8 @@ export default function Footer() {
         <div className="footer-col">
           <h4>Get in Touch</h4>
           <ul className="contact">
-            <a href="mailto:info@equifiz.com" target="_blank">
-              <li>✉️ info@equifiz.com</li>
+            <a href="mailto:contact@equifiz.com" target="_blank">
+              <li>✉️ contact@equifiz.com</li>
             </a>
             <li>
               📍 Mumbai

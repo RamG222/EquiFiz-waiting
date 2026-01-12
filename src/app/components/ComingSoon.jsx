@@ -14,7 +14,7 @@ export default function ComingSoon() {
         <div className="feature-card">
           <div className="card-top">
             <div className="icon-box">🔗</div>
-            <span className="quarter-badge">Q2 2024</span>
+            <span className="quarter-badge">Q1 2026</span>
           </div>
 
           <h3>Option Chain</h3>
@@ -33,7 +33,7 @@ export default function ComingSoon() {
         <div className="feature-card">
           <div className="card-top">
             <div className="icon-box">🔔</div>
-            <span className="quarter-badge">Q3 2024</span>
+            <span className="quarter-badge">Q1 2026</span>
           </div>
 
           <h3>Algos</h3>
@@ -52,7 +52,7 @@ export default function ComingSoon() {
         <div className="feature-card">
           <div className="card-top">
             <div className="icon-box">🌍</div>
-            <span className="quarter-badge">Q4 2024</span>
+            <span className="quarter-badge">Q1 2026</span>
           </div>
 
           <h3>Portfolio Allocation Tool</h3>

@@ -6,7 +6,7 @@ import "./FAQ.css";
 const faqs = [
   {
     q: "When will I get access to Equifiz?",
-    a: "We're rolling out access in phases starting Q2 2024. Waitlist members get priority access, and referring friends moves you up in the queue. Early supporters will be notified first.",
+    a: "We're rolling out access in phases starting Q1 2026. Waitlist members get priority access, and referring friends moves you up in the queue. Early supporters will be notified first.",
   },
   {
     q: "How does the referral program work?",
