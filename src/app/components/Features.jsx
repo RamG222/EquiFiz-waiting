@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Features.css";
 
 const FEATURES = [
@@ -80,6 +80,14 @@ export default function Features() {
   const [page, setPage] = useState(0);
   const itemsPerPage = 4;
   const totalPages = Math.ceil(FEATURES.length / itemsPerPage);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setPage((prev) => (prev + 1) % totalPages);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [totalPages]);
 
   const start = page * itemsPerPage;
   const visible = FEATURES.slice(start, start + itemsPerPage);
