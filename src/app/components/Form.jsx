@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Popup from "./Popup";
 
 function FormCard() {
   const [email, setEmail] = useState("");
@@ -7,6 +8,7 @@ function FormCard() {
   const [accepted, setAccepted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
+  const [showPopup, setShowPopup] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -38,6 +40,7 @@ function FormCard() {
       }
 
       setMessage("✅ You’re on the waitlist!");
+      setShowPopup(true);
       setEmail("");
       setPhone("");
       setAccepted(false);
@@ -83,6 +86,13 @@ function FormCard() {
       </button>
 
       {message && <p className="form-note">{message}</p>}
+
+      <Popup
+        isOpen={showPopup}
+        onClose={() => setShowPopup(false)}
+        title="Success!"
+        message="You have successfully joined the waitlist. We will notify you soon!"
+      />
     </form>
   );
 }

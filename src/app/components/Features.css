@@ -75,6 +75,11 @@
   background: #ffffff;
   cursor: pointer;
   font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  line-height: 1;
 }
 
 .arrow.left {
@@ -84,6 +89,7 @@
 .arrow.right {
   right: -50px;
 }
+
 .pagination {
   margin-top: 40px;
   position: relative;
@@ -179,6 +185,10 @@
   .feature-card {
     padding: 24px;
     min-height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .icon {
