@@ -104,7 +104,18 @@ export default function Features() {
           className="arrow left"
           onClick={() => setPage(Math.max(page - 1, 0))}
         >
-          ‹
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
         </button>
 
         <div className="features-grid">
@@ -121,7 +132,18 @@ export default function Features() {
           className="arrow right"
           onClick={() => setPage(Math.min(page + 1, totalPages - 1))}
         >
-          ›
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
         </button>
       </div>
       <div className="pagination">
