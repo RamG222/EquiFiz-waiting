@@ -153,15 +153,6 @@ export default function Features() {
             style={{ width: `${((page + 1) / totalPages) * 100}%` }}
           />
         </div>
-        <div className="dots">
-          {Array.from({ length: totalPages }).map((_, i) => (
-            <span
-              key={i}
-              className={i === page ? "dot active" : "dot"}
-              onClick={() => setPage(i)}
-            />
-          ))}
-        </div>
       </div>
     </section>
   );
