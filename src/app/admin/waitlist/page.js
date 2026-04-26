@@ -22,26 +22,13 @@ export default async function AdminWaitlistPage({ searchParams }) {
     Math.min(500, Number.parseInt(String(limitRaw || "100"), 10) || 100)
   );
 
-  const query = q
-    ? `
-      SELECT id, email, phone, created_at
-      FROM waitlist
-      WHERE email ILIKE $1 OR phone ILIKE $1
-      ORDER BY created_at DESC
-      LIMIT $2
-    `
-    : `
-      SELECT id, email, phone, created_at
-      FROM waitlist
-      ORDER BY created_at DESC
-      LIMIT $1
-    `;
+ 
 
-  const params = q ? [`%${q}%`, limit] : [limit];
-  let rows = [];
+
+    let rows = [];
   let dbError = null;
   try {
-    const result = await pool.query(query, params);
+    const result = await pool.query("SELECT * FROM waitlist");
     rows = result.rows || [];
   } catch (err) {
     dbError = err;
