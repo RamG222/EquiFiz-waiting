@@ -27,9 +27,7 @@ export default function App() {
             <span>Own the Future.</span>
           </h1>
 
-          <p className="subtitle">
-           One Place to Research, Analyse and Decide.
-          </p>
+          <p className="subtitle">One Place to Research, Analyse and Decide.</p>
 
           {/* FORM CARD */}
           <FormCard />
@@ -44,7 +42,7 @@ export default function App() {
 
           <div className="float rupee">₹</div>
           <div className="logo-box">
-            <img src="/equifiz.png" alt="Equifiz Logo" className="logo-img" />
+            <img src="/logo.png" alt="Equifiz Logo" className="logo-img" />
           </div>
 
           <div className="chart-card">
